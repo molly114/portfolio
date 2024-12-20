@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+
+section {}
+
+article.gate {
+    width: 100%;
+    margin: 100px 0;
+    background: url(../img/02_heritage/main.jpg) center bottom;
+}
+
+article.gate h2 {
+    font-family: "Bona Nova SC", serif;
+    font-size: 50px;
+    font-size: 3.125rem;
+    color: #fff;
+    text-align: center;
+    padding-top: 120px;
+    margin-bottom: 50px;
+
+}
+
+article.gate p {
+    font-size: 18px;
+    font-size: 1.125rem;
+    color: #fff;
+    text-align: center;
+
+    position: relative;
+    /* 가상요소 기준 */
+}
+
+article.gate p::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color: #fff;
+    margin: 0 auto;
+
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    transform: translate(-50%, 50%);
+}
+
+/* -------------------------article.heritage----------------------- */
+article.heritage {
+    width: 100%;
+
+    margin-bottom: 200px;
+    position: relative;
+    /* .btn2, .container 의 기준 */
+}
+
+article.heritage .btn {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+article.heritage .btn a {
+    display: inline-block;
+    width: 70px;
+    padding: 6px 15px;
+    margin-left: 20px;
+    border: 2px solid #001E63;
+    border-radius: 30px;
+
+    font-size: 18px;
+    font-size: 1.125rem;
+    color: #555;
+    font-weight: 600;
+}
+
+article.heritage .btn .on {
+    background-color: #001E63;
+    color: #fff;
+}
+
+
+article.heritage .heritage-bg {
+    width: 100%;
+    height: 1280px;
+    background: url(../img/02_heritage/bg.png) no-repeat;
+}
+
+/* ---------------------------------.container----------------------------- */
+
+article.heritage .container {
+    /* 실제 슬라이드가 보여지는 공간 */
+
+    /* overflow: hidden; */
+
+    width: 50%;
+    height: 550px;
+    margin: 0 auto;
+
+    position: absolute;
+    top: 50%;
+    left: 32.5%;
+    /* .content 기준! */
+
+    /* outline: 3px solid plum; */
+}
+
+.container .content {
+    /* 부모 공간 */
+    position: relative;
+    height: 100%;
+
+    /* outline: 2px solid sandybrown; */
+}
+
+.container .content>li.wrap {
+    /* li 박스 하나씩! */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    /* outline: 2px solid greenyellow; */
+}
+
+.container li.box1 {
+    /* active된 첫번째 box  */
+    top: 0;
+}
+
+.container li.box2 {
+    top: 74%;
+    left: -16%;
+}
+
+.container li.box3 {
+    top: 74%;
+    left: -16%;
+
+    display: none;
+}
+
+.container li.box4 {
+    top: -74%;
+    left: -14.8%;
+}
+
+
+/* --------------------li.wrap-------------------------- */
+.container .content li.wrap::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+
+.content .wrap .cate {
+   /*  outline: 2px solid tomato; */
+    float: left;
+    margin-right: 10%;
+}
+
+.wrap .cate .circle {
+    width: 16px;
+    height: 16px;
+    background-color: #c0c0c0;
+    border-radius: 10px;
+    float: left;
+
+    margin-top: 42px;
+    margin-right: 24px;
+}
+
+.wrap .cate .num {
+    font-size: 60px;
+    font-size: 3.75rem;
+    font-weight: 600;
+    color: #c0c0c0;
+    float: left;
+}
+
+.content .wrap .txt-box {
+    float: left;
+    width: 100%;
+    max-width: 630px;
+
+    display: none;
+   /*  outline: 2px solid teal; */
+}
+
+.wrap .txt-box img {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.wrap .txt-box .tit {
+    font-weight: 600;
+    font-size: 28px;
+    font-size: 1.75rem;
+    line-height: 50px;
+}
+
+.wrap .txt-box p {
+    font-size: 18px;
+    font-size: 1.125rem;
+    word-break: keep-all;
+}
+
+
+/* ------------------active--------------- */
+
+
+.container .content .active .cate {}
+
+.container .box1>.cate .circle {
+    background-color: #001E63;
+
+    width: 26px;
+    height: 26px;
+    border-radius: 20px;
+}
+
+.container .box1>.cate .num {
+    color: #001E63;
+}
+
+
+article.heritage .container .box1>.txt-box {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -40%;
+
+    /* outline: 2px solid greenyellow; */
+}
+
+
+
+/* --------------------.btn2--------------------- */
+.btn2 {
+    position: absolute;
+    right: 17%;
+    bottom: 20%;
+}
+
+.btn2 .prev {
+    padding-right: 20px;
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    font-size: 0;
+    background: url(../img/02_heritage/prev.png) no-repeat;
+}
+
+.btn2 .next {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    font-size: 0;
+    background: url(../img/02_heritage/next.png) no-repeat;
+}

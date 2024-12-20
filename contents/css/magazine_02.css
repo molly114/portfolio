@@ -1,0 +1,351 @@
+@charset "utf-8";
+
+article.gate {
+    width: 100%;
+    margin-top: 100px;
+    background: url(../img/06_interview/main__.jpg) no-repeat bottom;
+}
+
+article.gate .gate-txt {
+    /*  outline: 2px solid yellow; */
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+article.gate h2 {
+    font-size: 50px;
+    font-size: 3.125rem;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 140px;
+    margin-bottom: 10px;
+}
+
+article.gate p {
+    font-size: 18px;
+    font-size: 1.125rem;
+    color: #fff;
+}
+
+/* ----------------------------article.sec-tit--------------------------- */
+
+article.sec-tit {
+    text-align: center;
+    margin: 100px 0;
+}
+
+article.sec-tit p {
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 26px;
+}
+
+.menu {
+    width: 80%;
+    max-width: 800px;
+    margin: 100px auto 200px;
+
+    /* outline: 2px solid red; */
+}
+
+.menu ul {
+    /*  padding: 0 40px; */
+}
+
+.menu ul li {
+    float: left;
+    width: 25%;
+
+}
+
+.menu li .circle {
+    border-radius: 100%;
+
+    /* a의 기준 */
+    position: relative;
+    overflow: hidden;
+}
+
+.menu ul li .circle img {
+    display: block;
+    width: 100%;
+}
+
+.menu ul li .circle a {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    padding-top: 43%;
+
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.menu ul li .circle a:hover {
+    opacity: 1;
+}
+
+/* ----------------------article.interview-------------------------- */
+
+article.interview .tit h2 {
+    font-weight: 700;
+    font-size: 46px;
+    font-size: 2.875rem;
+
+}
+
+article.interview .tit h3 {
+    font-weight: 600;
+    font-size: 30px;
+    font-size: 1.875rem;
+    line-height: 38px;
+    margin-bottom: 40px;
+}
+
+article.interview .intro {
+    margin-bottom: 100px;
+
+    position: relative;
+    /* .intro-txt 기준! */
+}
+
+
+article.interview .intro .img-box {
+    width: 40%;
+    max-width: 512px;
+
+    /* outline: 2px solid blue; */
+}
+
+.intro .img-box img {
+    display: block;
+    width: 100%;
+}
+
+article.interview .intro .intro-txt {
+    position: absolute;
+    left: 45%;
+    top: 0;
+
+    /* outline: 2px solid skyblue; */
+}
+
+.intro .intro-txt h3 {
+    font-weight: 700;
+    font-size: 26px;
+    font-size: 1.625rem;
+    margin-bottom: 10px;
+}
+
+.intro .intro-txt p {
+    font-size: 20px;
+    font-size: 1.25rem;
+}
+
+/* --------------------------------.qna------------------------------- */
+
+
+article.interview .qna {
+    margin-bottom: 100px;
+    position: relative;
+    /* .qna-txt기준! */
+}
+
+article.interview .qna .qna-txt {
+    width: 40%;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    /*  outline: 2px solid skyblue; */
+}
+
+.qna .qna-txt .q {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.qna .qna-txt .a {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+article.interview .qna .img-box {
+    float: right;
+    width: 40%;
+    max-width: 512px;
+
+    /*  outline: 2px solid blue; */
+}
+
+.qna .img-box img {
+    display: block;
+    width: 100%;
+}
+
+/* --------------------------------.qna2------------------------------- */
+
+article.interview .qna2 {
+
+    position: relative;
+    /* .qna2 기준 */
+
+    margin-bottom: 160px;
+}
+
+article.interview .qna2 .qna-txt {
+    width: 40%;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.qna2 .qna-txt .q {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.qna2 .qna-txt .a {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.qna2 .img-box {
+    float: left;
+    width: 40%;
+    max-width: 512px;
+}
+
+.qna2 .img-box img {
+    display: block;
+    width: 100%;
+}
+
+/* ----------------------------.slider------------------------------------- */
+
+article.interview .content {
+    /* .btn기준 */
+    position: relative;
+
+    margin-bottom: 160px;
+}
+
+article.interview .content .slider {
+    width: 60%;
+    max-width: 768px;
+    margin: 0 auto 100px;
+
+    overflow: hidden;
+
+    /* outline: 2px solid yellow; */
+}
+
+.content .slider ul {
+    width: 300%;
+
+    /*  outline: 2px solid tomato; */
+}
+
+.content .slider ul li {
+    float: left;
+    width: 33.33%;
+}
+
+.slider ul li img {
+    display: block;
+    width: 100%;
+}
+
+
+/* -----------------------------.btn------------------------------ */
+
+.content .btn {}
+
+.content .btn .prev {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.content .prev a {
+    background: url(../img/06_interview/prev.png) no-repeat top/cover;
+    width: 80px;
+    height: 80px;
+    font-size: 0;
+}
+
+.content .next {
+    position: absolute;
+    left: 83%;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.content .next a {
+    background: url(../img/06_interview/next.png)no-repeat top/cover;
+    width: 80px;
+    height: 80px;
+    font-size: 0;
+
+}
+
+article.interview .shoe {
+
+    text-align: center;
+    /* background-color: mediumaquamarine; */
+}
+
+article.interview .shoe .shoe-box {
+    display: inline-block;
+    width: 50%;
+    max-width: 250px;
+    text-align: center;
+
+    /* outline: 2px solid yellow; */
+}
+
+.shoe .shoe-box~.shoe-box {
+    margin-left: 30px;
+}
+
+.shoe .shoe-box img {
+    display: inline-block;
+    width: 100%;
+}
+
+
+
+article.interview .buying {
+    background-color: #001E63;
+    font-size: 18px;
+    font-size: 1.125rem;
+    font-weight: bold;
+
+    display: block;
+    padding: 10px 20px;
+    width: 145px;
+    box-sizing: border-box;
+    margin: 0 auto 200px;
+
+}
+
+a.buying:hover {
+    text-decoration: underline;
+}

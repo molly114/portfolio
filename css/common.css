@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+.inner {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    color: #333;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* .bona-nova-sc-regular {
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.noto-sans-kr {
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+} 
+    
+.abril-fatface-regular {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+}
+
+*/
+
+.gate {
+    width: 100%;
+    height: 480px;
+}
+
+.bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.title h3 {
+    font-size: 40px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.title p {
+    font-size: 24px;
+    font-size: 1.5rem;
+}

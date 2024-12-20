@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+footer {
+    background-color: #001E63;
+    width: 100%;
+    height: 132px !important;
+    box-sizing: border-box;
+}
+
+a {
+    color: #fff;
+}
+
+footer .footer-top {
+    padding: 20px 0;
+    position: relative;
+    /* links기준! */
+    border-bottom: 1px solid silver;
+}
+
+
+footer .footer-logo {
+    float: left;
+    /*  outline: 2px solid red; */
+}
+
+footer .footer-logo a {
+    width: 110px;
+    height: 100%;
+}
+
+footer .footer-logo a img {
+    width: 100%;
+    display: block;
+}
+
+footer .links {
+    /* float: left; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    /* outline: 2px solid lime; */
+}
+
+footer .links li {
+    float: left;
+    padding: 0 30px;
+}
+
+footer .links li a:hover {
+    text-decoration: underline;
+}
+
+footer .sns {
+    float: right;
+    /* outline: 2px solid silver; */
+}
+
+footer .sns li {
+    float: left;
+    padding: 0 5px;
+}
+
+footer .sns li .facebook {
+    width: 32px;
+    height: 32px;
+    font-size: 0;
+    background: url(../img/icon/facebook_bg.png) top left;
+}
+
+footer .sns li .facebook:hover {
+    background-position: top right;
+}
+
+footer .sns li .instagram {
+    width: 32px;
+    height: 32px;
+    font-size: 0;
+    background: url(../img/icon/instagram_bg.png) top left;
+}
+
+footer .sns li .instagram:hover {
+    background-position: top right;
+}
+
+footer .sns li .youtube {
+    width: 32px;
+    height: 32px;
+    font-size: 0;
+    background: url(../img/icon/youtube-bg.png) top left;
+}
+
+footer .sns li .youtube:hover {
+    background-position: top right;
+}
+
+footer .footer-bottom {
+    width: 80%;
+    max-width: 1280px;
+    margin: 10px auto;
+    color: silver;
+
+    /* outline: 2px solid red; */
+}
+
+footer .footer-bottom .copyright {
+    /*  position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+    width: 51%;
+    margin: 0 auto;
+
+    /* outline: 2px solid blue; */
+}
+
+footer .footer-bottom .copyright li {
+    float: left;
+    padding: 10px 12px;
+}
+
+footer .footer-bottom .copyright li>a {
+    color: silver;
+}

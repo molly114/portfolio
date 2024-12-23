@@ -31,12 +31,12 @@ $(document).ready(function () {
     $('.best-item a').hover(function(){
         //mouseenter
         clearInterval(autocall);
-        $(this).css('transform', 'scale(1.4)');
+        $(this).css('transform', 'scale(1.4)').find('p').show();
 
     }, function(){
         //mouseleave
         autocall = setInterval(flowTop, 40);
-        $(this).css('transform', 'none');
+        $(this).css('transform', 'none').find('p').hide();
 
     });
 

@@ -123,13 +123,13 @@ a {
 .slider ul .page img {
     display: block;
     width: 80%;
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
 .page .page-tit {
     width: 80%;
-    max-width: 800px;
+    max-width: 700px;
     margin: 20px auto;
 }
 
@@ -142,7 +142,7 @@ a {
 
 .page .page-des {
     width: 80%;
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -178,22 +178,22 @@ a {
 
 /* -------------------youtube------------------ */
 
-.youtube {
+.youtube-box {
     margin-bottom: 200px;
     /* outline: 2px solid red; */
 }
 
-.youtube .video-box {
+.youtube-box .video-box {
     text-align: center;
 }
 
-.youtube .service-btn {
+.youtube-box .service-btn {
     background-color: #DCE4FE;
     width: 200px;
     margin: 50px auto;
 }
 
-.youtube .service-btn a {
+.youtube-box .service-btn a {
     padding: 10px 20px;
     font-size: 18px;
     font-size: 1.125rem;
@@ -202,6 +202,6 @@ a {
     text-align: center;
 }
 
-.youtube .service-btn a:hover {
+.youtube-box .service-btn a:hover {
     text-decoration: underline;
 }

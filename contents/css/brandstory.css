@@ -76,7 +76,8 @@ article.boxes .img-box {
     overflow: hidden;
     box-shadow: 1px 1px 8px #999;
 
-    opacity: 0; /* jquery 초기설정 */
+    opacity: 0;
+    /* jquery 초기설정 */
 }
 
 article.boxes .img-box img {
@@ -174,6 +175,7 @@ article.more .more-img::after {
 
 article.more .more-img .lab {
     float: left;
+    width: 50%;
     position: relative;
 
     /*     outline: 2px solid teal; */
@@ -213,6 +215,7 @@ article.more .more-img .lab a:hover {
 
 article.more .more-img .museum {
     float: left;
+    width: 50%;
     position: relative;
     /* a 기준! */
     /* background-color: teal; */

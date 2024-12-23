@@ -18,18 +18,17 @@ $(function () {
         // mouseenter
         var nowImg = $(this).find('img'); // 현재 이미지 요소
         var srcName = nowImg.attr('src'); // 이미지의 현재 src
-        var newSrc = srcName.substring(0, srcName.lastIndexOf('a.')); // 'a.' 이전까지의 문자열 추출
-        var extension = /[^.]+$/.exec(srcName)[0]; // 확장자 추출 (예: 'jpg', 'png')
+        var newSrc = srcName.replace('a.', 'b.'); // 파일명 바꾸기
 
-        nowImg.attr('src', newSrc + 'b.' + extension); // 'b.'로 변경
+        nowImg.attr('src', newSrc);
+
     }, function () {
         // mouseleave
         var nowImg = $(this).find('img'); // 현재 이미지 요소
         var srcName = nowImg.attr('src'); // 이미지의 현재 src
-        var newSrc = srcName.substring(0, srcName.lastIndexOf('b.')); // 'b.' 이전까지의 문자열 추출
-        var extension = /[^.]+$/.exec(srcName)[0]; // 확장자 추출
+        var newSrc = srcName.replace('b.', 'a.'); // 파일명 바꾸기
 
-        nowImg.attr('src', newSrc + 'a.' + extension); // 'a.'로 변경
+        nowImg.attr('src', newSrc); // 'a.'로 변경
     });
 
 

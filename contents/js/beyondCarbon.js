@@ -44,6 +44,22 @@ $(window).scroll(function () {
             e.preventDefault();
             move();
         });
+
+        $('.pager').css({
+            position: 'fixed',
+            left: '50%',
+            bottom: '17%',
+            'transform': 'translateX(-50%)'
+        });
+    } else {
+        scLock = 0; //화면 스크롤 가능
+
+        $('.pager').css({
+            position: 'relative',
+            left: '',
+            bottom: '',
+            'transform': ''
+        });
     }
 
 });
@@ -99,6 +115,7 @@ function move() {
         //잠금해제가 되면 휠 이벤트도 제거해!
         console.log('휠이벤트 제거!');
         $('.slider').off('mousewheel DOMMouseScroll')
+
     }
 
 
@@ -111,18 +128,32 @@ function move() {
         stat = 0; //핸들러 실행 허용 상태로 변경!
     });
 
-    menuChange();
+    menuChange(pageCount);
 }
 
-$('.pager a').click(function (e) {
+$('.pager a').on('click', function (e) {
     e.preventDefault();
 
-    var idx = $(this).index();
-    console.log('pager 배열 : ' + idx);
+    var targetId = $(this).attr('href');
+    var targetPage = $(targetId).offset().top;
+    var pageCount = $(this).index();
+
+    console.log(targetPage);
+
+    $('.slide-wrap').animate({
+        left: -(100 * pageCount) + '%'
+    }, 800);
+
+    menuChange(pageCount);
 });
 
 
 ////  메뉴변경 함수 
-function menuChange() {
-    $('.pager a').eq(pageCount).addClass('active').siblings().removeClass('active');
+function menuChange(pageCount) {
+    $('.pager a').removeClass('active');
+    $('.pager a').eq(pageCount).addClass('active');
+
 }
+
+
+

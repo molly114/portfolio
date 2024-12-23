@@ -71,7 +71,7 @@ $(window).scroll(function () {
     var docHeight = $(document).height();
 
     // 문서 높이에 따라 다른 기준점을 설정합니다.
-    var threshold = docHeight > 3500 ? 3200 : 2500;
+    var threshold = Math.min(docHeight * 0.7, 3200);
 
     if (scTop > threshold) {
         $('.totop').fadeIn();

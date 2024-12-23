@@ -55,6 +55,7 @@ article.tips .container .content:nth-child(3n+1) {
 }
 
 .container .content .img-box {
+    /* transition: all 0.5s; */
     
 }
 
@@ -128,5 +129,5 @@ article.tips .totop>a {
 }
 
 article.tips .totop>a:hover {
-    color: #001E63;
+    background-color: #001E63;
 }

@@ -54,12 +54,13 @@ article.gate p::before {
 /* -------------------------------.footprint----------------------------- */
 
 article.footprint {
+
     width: 80%;
     max-width: 1280px;
-    margin: 0 auto 80px;
+    margin: 0 auto;
 
-    height: 550px;
-    background: url(../img/04_beyondCarboon/footprint.png) no-repeat top left;
+    height: 670px;
+    background: url(../img/04_beyondCarboon/footprint.png) no-repeat left;
 
     position: relative;
     /* .footprint-txt기준 */
@@ -71,7 +72,7 @@ article.footprint .footprint-txt {
     max-width: 630px;
 
     position: absolute;
-    right: 10%;
+    right: 0;
     bottom: 5%;
 }
 
@@ -118,7 +119,7 @@ article.slide-wrap div.step {
 }
 
 article.slide-wrap div.step .bg {
-    padding-top: 10%;
+    padding-top: 9%;
     box-sizing: border-box;
 }
 
@@ -150,7 +151,9 @@ div.step .pager {
     max-width: 1280px;
     margin: 0px auto;
 
-    position: relative; /* 가상요소 기준! */
+    position: relative;
+    /* transform: translateX(-50%); */
+    /* 가상요소 기준! */
     /* outline: 2px solid red; */
 
 }
@@ -165,12 +168,16 @@ div.step .pager::before {
 
     position: absolute;
     left: 50%;
-    bottom: -77%;
+    bottom: -50%;
 
     transform: translateX(-50%);
 }
 
 div.step .pager .pager-box {
+
+/*     position: sticky;
+    bottom: 12%; */
+
     /* outline: 2px solid plum; */
 }
 
@@ -192,14 +199,15 @@ div.step .pager .pager-box {
 
     position: absolute;
     left: 47%;
-    bottom: -100%;
+    bottom: -75%;
 }
 
 
 div.step .content {
     width: 80%;
     max-width: 1280px;
-    height: 420px;
+    height: 70%;
+    max-height: 420px;
     margin: 0 auto;
     margin-bottom: 5%;
     border-radius: 30px;
@@ -214,7 +222,8 @@ div.step .content .img-box {
     left: 6%;
     top: -10%;
 
-    width: 450px;
+    width: 36%;
+    max-width: 450px;
 }
 
 .content .img-box img {
@@ -228,6 +237,7 @@ div.step .content .info-box {
     top: 10%;
 
     width: 40%;
+    max-width: 455px;
 }
 
 .content .info-box .tit-box {
@@ -269,6 +279,11 @@ div.step .content .info-box {
 
 .content .info-box .des-box p {
     word-break: keep-all;
+}
+
+#nth4 .content .info-box .des-box p {
+    font-size: 15px;
+    font-size: 0.9375rem;
 }
 
 article.slide-wrap div.final {

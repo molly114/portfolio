@@ -60,7 +60,7 @@ article.footprint {
     margin: 0 auto;
 
     height: 670px;
-    background: url(../img/04_beyondCarboon/footprint.png) no-repeat left;
+    background: url(../img/04_beyondCarboon/footprint.png) no-repeat top left;
 
     position: relative;
     /* .footprint-txt기준 */

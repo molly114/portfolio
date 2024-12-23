@@ -138,6 +138,13 @@ article.heritage .container {
 }
 
 .container li.box4 {
+    top: 74%;
+    left: -16%;
+
+    display: none;
+}
+
+.container li.box5 {
     top: -74%;
     left: -14.8%;
 }

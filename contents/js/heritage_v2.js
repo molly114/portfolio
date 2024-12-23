@@ -54,21 +54,28 @@ $(document).ready(function () {
     $('.cate').click(function (e) {
         e.preventDefault();
 
-        var currentCate = $(this).index();
-        $(this).parent().addClass('active').siblings().removeClass('active');
+        //$(this).parent().find('.txt-box').show();
+        var chg = $(this).parent().attr('class');
+        console.log(chg);
 
-        // 모든 박스 숨기고 선택한 박스만 보이기
-        $('.container li .txt-box').hide(); // 모든 txt-box 숨김
-        $(this).css({
-            position: 'absolute', // absolute로 위치 조정
-            top: '-74%', // 상단으로 이동
-            left: '16%' // 좌측으로 이동
-        }).$('.container li .txt-box').fadeIn(600); // 선택한 박스의 txt-box 보이기
+        if (chg === 'wrap box2') {
+            $(this).parent().animate({
+                top: 0,
+                left: 0
+            }, 500, function () {
+                $(this).find('.cate .circle').css({
+                    backgroundColor: '#001E63',
+                    width: '26px',
+                    height: '26px',
+                    borderRadius: '20px'
+                }).find('.num').css({
+                    color: '#001E63'
+                }).find('.txt-box').fadeIn(600)
+            })
 
+            $()
+        }
 
-        $('html, body').animate({
-            scrollTop: $(currentCate).offset().top // 타겟 요소까지 스크롤
-        }, 600); // 애니메이션 시간 (600ms)
 
     });
 
@@ -91,7 +98,8 @@ function slide(direction) {
         { top: '0', left: '0' }, //1
         { top: '74%', left: '-16%' }, //2
         { top: '74%', left: '-16%' }, //3
-        { top: '-74%', left: '-14.8%' } //4
+        { top: '74%', left: '-16%' }, //3
+        { top: '-74%', left: '-14.8%' } //5
     ];
 
     if (direction) {
@@ -101,13 +109,13 @@ function slide(direction) {
         // 이전 이동
         pages.last().insertBefore(pages.first());
 
-      /*   if (currentP === 1) {
-            pages.last().insertBefore(pages.first());
-            currentP = 0;
-        } else { 
-            pages.last().insertBefore(pages.first());
-        } */
-        
+        /*   if (currentP === 1) {
+              pages.last().insertBefore(pages.first());
+              currentP = 0;
+          } else { 
+              pages.last().insertBefore(pages.first());
+          } */
+
     }
 
     // DOM 순서가 변경된 후 position 값 업데이트

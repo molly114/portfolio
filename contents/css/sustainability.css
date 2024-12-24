@@ -304,7 +304,7 @@ article.roadtrip::before {
     background: url(../img/03_sustainability/road_trip.png) no-repeat;
 
     position: absolute;
-    left: 42.1%;
+    left: 44%;
     top: 46.8%;
 }
 
@@ -323,7 +323,7 @@ article.roadtrip .road::before {
     display: block;
 
     position: absolute;
-    left: 45%;
+    left: 0;
     top: 60%;
     /* transform: translateY(-50%); */
 }
@@ -337,6 +337,7 @@ article.roadtrip .road::before {
 .road .achieve .year {
     /* outline: 2px solid salmon; */
 
+    color: #999;
     font-size: 26px;
     font-size: 1.625rem;
     font-weight: 600;
@@ -350,7 +351,7 @@ article.roadtrip .road::before {
 
 article.roadtrip .road .achieve:first-child {
     position: absolute;
-    left: 45%;
+    left: 47%;
     top: 13%;
 }
 
@@ -373,6 +374,10 @@ article.roadtrip .road .achieve:first-child {
 
 .road .achieve:first-child .goal-des {
     opacity: 1;
+}
+
+article.roadtrip .road .active .year {
+    color: #001E63;
 }
 
 article.roadtrip .road .active .dot {

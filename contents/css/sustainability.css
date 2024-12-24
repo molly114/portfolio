@@ -292,6 +292,22 @@ article.roadtrip .roadtrip-title p {
 
 
 /* -------------------------------.road------------------------------- */
+article.roadtrip {
+    position: relative; /* 가상요소 기준 */
+    margin: 0 auto;
+}
+
+article.roadtrip::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: url(../img/03_sustainability/road_trip.png) no-repeat;
+
+    position: absolute;
+    left: 42.1%;
+    top: 46.8%;
+}
+
 article.roadtrip .road {
     height: 300px;
     /*  outline: 2px solid red; */
@@ -312,89 +328,55 @@ article.roadtrip .road::before {
     /* transform: translateY(-50%); */
 }
 
-article.roadtrip .road .achieve {
-    outline: 2px solid blue;
-    /* display: inline-block; */
+.road .achieve .goal {}
 
-}
-
-.road .achieve .goal-des {
-    outline: 2px solid lime;
-   /*  display: none; */
+.road .achieve .goal .goal-des {
+    opacity: 0;
 }
 
 .road .achieve .year {
+    /* outline: 2px solid salmon; */
 
-    outline: 2px solid salmon;
-    
     font-size: 26px;
+    font-size: 1.625rem;
     font-weight: 600;
-    position:relative;
-
+    margin-bottom: 10px;
 }
 
-.road .achieve .dot {
-    width: 16px;
-    height: 16px;
-    border-radius: 10px;
-    background-color: #001E63;
-    display: block;
-    margin-top: 50px;
+.road .achieve .goal ul.goal-des li {
+    margin-bottom: 10px;
 }
+
 
 article.roadtrip .road .achieve:first-child {
     position: absolute;
-    left: 44.5%;
-    top: 12.5%;
+    left: 45%;
+    top: 13%;
+}
+
+.road .achieve:nth-child(2) {
+    position: absolute;
+    right: 12%;
+    top: 58%;
+}
+
+.road .achieve:nth-child(2) .dot {
+    margin: 0 0 50px;
+}
+
+.road .achieve:nth-child(3) {
+    position: absolute;
+    right: 0;
+    top: 17%;
 }
 
 
-
-/* article.roadtrip .road .active {
-    position: relative; 가상요소 기준
+.road .achieve:first-child .goal-des {
+    opacity: 1;
 }
 
 article.roadtrip .road .active .dot {
     background-color: #001E63;
-
-} */
-
-.road .achieve::after {
-    content: "";
-    width: 100px;
-    height: 100px;
-    background: url(../img/03_sustainability/road_trip.png) no-repeat;
-
-    position: absolute;
-    left: -15.3%;
-    top: 67%;
-}
-
-/* article.roadtrip .road .active>.goal {
-    opacity: 1;
-}
-
-article.roadtrip .road .achieve:first-child {
-    position: absolute;
-    left: 44.5%;
-    top: 8.5%;
-}
-
-article.roadtrip .road .achieve:nth-child(2) {
-    position: absolute;
-    left: 64%;
-    top: 57.5%;
-}
-
-article.roadtrip .road .achieve:nth-child(2) .dot {
-    margin-top: 0;
-    margin-bottom: 50px;
-}
-
-article.roadtrip .road .achieve:last-child {
-    position: absolute;
-    right: 0;
-    top: 17%;
 }
 
 .road .achieve .dot {
@@ -405,33 +387,3 @@ article.roadtrip .road .achieve:last-child {
     display: block;
     margin-top: 50px;
 }
-
-.road .achieve .goal {}
-
-.road .achieve .goal .year {
-    font-weight: 600;
-    font-size: 24px;
-    font-size: 1.5rem;
-
-    margin-bottom: 10px;
-}
-
-.road .achieve .goal p {
-    font-size: 18px;
-    font-size: 1.125rem;
-
-}
-
-.road .achieve .goal ul {
-  
-}
-
-.road .achieve .goal ul li {
-    font-size: 18px;
-    font-size: 1.125rem;
-    margin-bottom: 10px;
-}
- */
-/* .road .achieve .goal .goal-des {
-    display: none; 
-} */

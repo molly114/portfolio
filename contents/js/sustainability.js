@@ -76,7 +76,11 @@ function move() {
     }
 
     if(scLock === 0) {
-        
+        $('.roadtrip').off('mousewheel DOMMouseScroll')
     }
+
+    $('.road').animate({
+        
+    });
 
 }

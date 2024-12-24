@@ -2,7 +2,20 @@
 
 //alert('hihi');
 
+$(window).scroll(function () {
 
+    //마우스휠 발생 시, gnb 색깔 바꾸기 
+
+    var scTop = $(this).scrollTop();
+    var headerTop = $('.gate').outerHeight();
+
+    if (scTop > headerTop) {
+        $('header').addClass('on');
+    } else {
+        $('header').removeClass('on');
+    }
+
+});
 
 $(document).ready(function () {
 

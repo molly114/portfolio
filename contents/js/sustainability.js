@@ -15,18 +15,31 @@ $(document).ready(function () {
         $('.lnb').stop().slideUp(600);
     });
 
-    total = $('.achieve').length;
-    console.log('합계' + total);
 
+    //클릭했을 때 animate
+    $('.achieve').click(function (e) {
+        e.preventDefault();
 
-    //클릭했을 때 animate 구현하기
-    $('.year').click(function(){
+        if ($(this).hasClass('active')) return;
 
-        $(this).parent().find('.goal-des').animate({
-            left:
+        var idx = $(this).index();
+        console.log('현재 누른 인덱스 값은? ' + idx);
+
+        $('.achieve').removeClass('active').find('.goal-des').css('opacity', 0).end().each(function (i) {
+            $(this).animate({
+                left: i === idx ? '47%' :
+                    i < idx ? (i + 1) * 12 + '%' : ((i - idx) * 20 + 40) + '%'
+            }, 500);
         });
 
+        $(this).addClass('active')
+            .find('.goal-des')
+            .delay(500)
+            .animate({ opacity: 1 }, 100);
+
+        console.log('Animation Completed');
     });
 
-});
 
+
+});

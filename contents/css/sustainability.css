@@ -348,6 +348,9 @@ article.roadtrip .road::before {
     margin-bottom: 10px;
 }
 
+article.roadtrip .road .achieve {
+    /* outline: 2px solid salmon */
+}
 
 article.roadtrip .road .achieve:first-child {
     position: absolute;
@@ -357,7 +360,7 @@ article.roadtrip .road .achieve:first-child {
 
 .road .achieve:nth-child(2) {
     position: absolute;
-    right: 12%;
+    left: 60%;
     top: 58%;
 }
 
@@ -367,7 +370,7 @@ article.roadtrip .road .achieve:first-child {
 
 .road .achieve:nth-child(3) {
     position: absolute;
-    right: 0;
+    left: 87%;
     top: 17%;
 }
 

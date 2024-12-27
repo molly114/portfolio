@@ -89,8 +89,8 @@ function slide(direction) {
     var pages = $('.container li');
     var positions = [
         { top: '0', left: '0' }, //1
-        { top: '74%', left: '-16%' }, //2
-        { top: '74%', left: '-16%' }, //3
+        { top: '65%', left: '-12%' }, //2
+        { top: '65%', left: '-12%' }, //3
         { top: '-74%', left: '-14.8%' } //4
     ];
 

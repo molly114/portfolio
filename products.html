@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Noto+Sans+KR:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header class="on">
+        <div class="inner">
+            <h1 class="logo"><a href="/portfolio/index.html"><img src="/portfolio/img/logo/logo_white.png"
+                        alt="asics">asics</a></h1>
+
+            <nav class="clear">
+                <ul class="gnb">
+                    <li>
+                        <a href="#">Brand</a>
+                        <ul class="lnb">
+                            <li><a href="/portfolio/contents/brandStory.html">Brand Story</a></li>
+                            <li><a href="/portfolio/contents/heritage.html">Heritage</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">ESG</a>
+                        <ul class="lnb">
+                            <li><a href="/portfolio/contents/Sustainability.html">Sustainability</a></li>
+                            <li><a href="/portfolio/contents/beyondCarbon.html">Beyond Carbon</a></li>
+                            <li><a
+                                    href="https://www.asics.co.kr/mk/move-her-mind?asics-orig-path=%2fmk%2fmove-her-mind">Move
+                                    her mind</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">Products</a>
+                        <ul class="lnb">
+                            <li><a href="#">Running</a></li>
+                            <li><a href="#">Trail-running</a></li>
+                            <li><a href="#">Tennis</a></li>
+                            <li><a href="#">Marathon</a></li>
+                            <li><a href="#">Golf</a></li>
+                            <li><a href="#">Indoor</a></li>
+                            <li><a href="#">Soccer</a></li>
+                            <li><a href="#">Basketball</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">Magazine</a>
+                        <ul class="lnb">
+                            <li><a href="/portfolio/contents/interview_01.html">Interview</a></li>
+                            <li><a href="/portfolio/contents/workoutTips.html">Workout TIPS</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">Service</a>
+                        <ul class="lnb">
+                            <li><a href="/portfolio/contents/footIdService.html">Foot ID scan</a></li>
+                            <li><a href="/portfolio/contents/membership.html">Membership</a></li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+            </nav>
+
+            <div class="onitsuka">
+                <a href="https://www.onitsukatiger.com/kr/ko-kr/"><img src="/portfolio/img/logo/onitsuka_logo_white.png"
+                        alt="onitsuka tiger">오니츠카 타이거</a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <section>
+
+        <article class="goods">
+
+            <div class="top">
+                <div class="category-box">
+                    <ul class="clear">
+                        <li><a href="#">Running</a></li>
+                        <li><a href="#">Trail-running</a></li>
+                        <li><a href="#">Tennis</a></li>
+                        <li><a href="#">Marathon</a></li>
+                        <li><a href="#">Golf</a></li>
+                        <li><a href="#">Indoor</a></li>
+                        <li><a href="#">Soccer</a></li>
+                        <li><a href="#">Basketball</a></li>
+                    </ul>
+                </div>
+
+                <div class="filter inner">
+
+                    <p>필터</p>
+
+                    <select name="variety">
+                        <option value="type">상품유형</option>
+                        <option value="top">상의</option>
+                        <option value="bottom">하의</option>
+                        <option value="shoe">신발</option>
+                        <option value="acc">악세서리</option>
+                    </select>
+
+                    <select name="cost">
+                        <option value="price">가격</option>
+                        <option value="max5">~5만원</option>
+                        <option value="max10">~10만원</option>
+                        <option value="max20">~20만원</option>
+                        <option value="over">그 외</option>
+                    </select>
+
+
+                    <select name="size">
+                        <optgroup label="clothes">
+                            <option value="small">S</option>
+                            <option value="medium">M</option>
+                            <option value="large">L</option>
+                            <option value="xlarge">XL</option>
+                        </optgroup>
+
+                        <optgroup label="shoes-size">
+                            <option value="220">220</option>
+                            <option value="230">230</option>
+                            <option value="240">240</option>
+                            <option value="250">250</option>
+                            <option value="260">260</option>
+                            <option value="270">270</option>
+                            <option value="280">280</option>
+                            <option value="290">290</option>
+                        </optgroup>
+                    </select>
+
+                    <select name="color">
+                        <option value="color-type">색상</option>
+                        <option value="white">화이트</option>
+                        <option value="black">블랙</option>
+                        <option value="red">레드</option>
+                        <option value="orange">오렌지</option>
+                        <option value="yellow">옐로우</option>
+                        <option value="green">그린</option>
+                        <option value="blue">블루</option>
+                        <option value="purple">퍼플</option>
+                    </select>
+
+                    <select name="sex">
+                        <option value="sex-type">성별</option>
+                        <option value="female">여성</option>
+                        <option value="male">남성</option>
+                    </select>
+
+                    <select name="wide">
+                        <option value="footsize-type">발 너비</option>
+                        <option value="4E">4E</option>
+                        <option value="2E">2E</option>
+                        <option value="D">D</option>
+                        <option value="B">B</option>
+                        <option value="2A">2A</option>
+                    </select>
+
+                </div>
+            </div>
+
+            <div class="container clear inner">
+
+                <div class="products">
+                    <a href="#">
+                        <img src="img/07_products/18.jpg" alt="">
+                    </a>
+
+                    <div class="txt-box">
+                        <div class="tag">
+                            <p class="new">new</p>
+                            <p class="sold-out">sold-out</p>
+                        </div>
+
+                        <div class="name">
+                            <a href="#">우먼 나기노 심리스 타이츠</a>
+                            <a href="#" class="price-tag">117,000원</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="products">
+                    <a href="#">
+                        <img src="img/07_products/23.png" alt="">
+                    </a>
+
+                    <div class="txt-box">
+                        <div class="tag">
+                            <p class="new">new</p>
+                            <p class="sold-out">sold-out</p>
+                        </div>
+
+                        <div class="name">
+                            <a href="#">ACCELERATE 방수 2.0 재킷</a>
+                            <a href="#" class="price-tag">305,600원</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="products">
+                    <a href="#">
+                        <img src="img/07_products/25.png" alt="">
+                    </a>
+
+                    <div class="txt-box">
+                        <div class="tag">
+                            <p class="new">new</p>
+                            <p class="sold-out">sold-out</p>
+                        </div>
+
+                        <div class="name">
+                            <a href="#">ACCELERATE 방수 2.0 재킷</a>
+                            <a href="#" class="price-tag">305,600원</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="products">
+                    <a href="#">
+                        <img src="img/07_products/27.png" alt="">
+                    </a>
+
+                    <div class="txt-box">
+                        <div class="tag">
+                            <p class="new">new</p>
+                            <p class="sold-out">sold-out</p>
+                        </div>
+
+                        <div class="name">
+                            <a href="#">ICON LIGHT 패커블 재킷</a>
+                            <a href="#" class="price-tag">188,600원</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="products">
+                    <a href="#">
+                        <img src="img/07_products/29.png" alt="">
+                    </a>
+
+                    <div class="txt-box">
+                        <div class="tag">
+                            <p class="new">new</p>
+                            <p class="sold-out">sold-out</p>
+                        </div>
+
+                        <div class="name">
+                            <a href="#">ICON LIGHT 패커블 재킷</a>
+                            <a href="#" class="price-tag">188,600원</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="products">
+                    <a href="#">
+                        <img src="img/07_products/31.png" alt="">
+                    </a>
+
+                    <div class="txt-box">
+                        <div class="tag">
+                            <p class="new">new</p>
+                            <p class="sold-out">sold-out</p>
+                        </div>
+
+                        <div class="name">
+                            <a href="#">여성 플렉스 소프트터치 팬츠</a>
+                            <a href="#" class="price-tag">97,000원</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="products">
+                    <a href="#">
+                        <img src="img/07_products/33.png" alt="">
+                    </a>
+
+                    <div class="txt-box">
+                        <div class="tag">
+                            <p class="new">new</p>
+                            <p class="sold-out">sold-out</p>
+                        </div>
+
+                        <div class="name">
+                            <a href="#">여성 트레이닝 코어 스트레치 우븐 팬츠</a>
+                            <a href="#" class="price-tag">111,000원</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="products">
+                    <a href="#">
+                        <img src="img/07_products/35.png" alt="">
+                    </a>
+
+                    <div class="txt-box">
+                        <div class="tag">
+                            <p class="new">new</p>
+                            <p class="sold-out">sold-out</p>
+                        </div>
+
+                        <div class="name">
+                            <a href="#">맨 스웻 니트 팬츠</a>
+                            <a href="#" class="price-tag">89,000원</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="products">
+                    <a href="#">
+                        <img src="img/07_products/37.png" alt="">
+                    </a>
+
+                    <div class="txt-box">
+                        <div class="tag">
+                            <p class="new">new</p>
+                            <p class="sold-out">sold-out</p>
+                        </div>
+
+                        <div class="name">
+                            <a href="#">맨 스웻 니트 팬츠</a>
+                            <a href="#" class="price-tag">89,000원</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="products">
+                    <a href="#">
+                        <img src="img/07_products/39.png" alt="">
+                    </a>
+
+                    <div class="txt-box">
+                        <div class="tag">
+                            <p class="new">new</p>
+                            <p class="sold-out">sold-out</p>
+                        </div>
+
+                        <div class="name">
+                            <a href="#">맨 스윗 릴랙스 풀오버 후디</a>
+                            <a href="#" class="price-tag">95,000원</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="products">
+                    <a href="#">
+                        <img src="img/07_products/41.png" alt="">
+                    </a>
+
+                    <div class="txt-box">
+                        <div class="tag">
+                            <p class="new">new</p>
+                            <p class="sold-out">sold-out</p>
+                        </div>
+
+                        <div class="name">
+                            <a href="#">맨 스윗 릴랙스 풀오버 후디</a>
+                            <a href="#" class="price-tag">95,000원</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="products">
+                    <a href="#">
+                        <img src="img/07_products/43.jpg" alt="">
+                    </a>
+
+                    <div class="txt-box">
+                        <div class="tag">
+                            <p class="new">new</p>
+                            <p class="sold-out">sold-out</p>
+                        </div>
+
+                        <div class="name">
+                            <a href="#">우먼 나기노 플렉스 7/8 타이츠</a>
+                            <a href="#" class="price-tag">85,000원</a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="pager">
+                <ul>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                </ul>
+            </div>
+
+        </article>
+
+
+    </section>
+
+
+
+
+    <footer>
+        <div class="footer-top inner clear">
+            <div class="footer-logo">
+                <a href="/portfolio/index.html"><img src="/portfolio/img/logo/logo_white.png" alt="asics"></a>
+            </div>
+
+            <div class="links">
+                <ul>
+                    <li><a href="https://www.asics.co.kr/service/cs">고객센터</a></li>
+                    <li><a href="https://www.asics.co.kr/board/?id=notice">공지사항</a></li>
+                    <li><a href="https://www.asics.co.kr/member/login?return_url=/mypage/myqna_catalog">1:1문의</a></li>
+                    <li><a href="https://www.asics.co.kr/member/login?order_auth=1">주문조회</a></li>
+                    <li><a href="https://www.asics.co.kr/board/?id=faq">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="sns">
+                <ul>
+                    <li><a href="https://www.facebook.com/ASICS/" class="facebook">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/asicskr/?hl=ko" class="instagram">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCsCck9f-gwcex8QaBvRoTpg" class="youtube">Youtube</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <ul class="copyright">
+                <li>Copyright &copy; 2024 ASICS Korea</li>
+                <li>All Rights Reserved</li>
+                <li><a href="https://www.asics.co.kr/service/agreement">이용약관</a></li>
+                <li><a href="https://www.asics.co.kr/service/privacy">개인정보처리방침</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

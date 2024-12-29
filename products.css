@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+section {
+    margin-top: 100px;
+}
+
+article.goods {
+    width: 100%;
+}
+
+article.goods .top {}
+
+article.goods .top .category-box {
+    width: 100%;
+    height: 50px;
+    background-color: #c1cfff;
+
+    position: relative;
+    /* ul 기준! */
+}
+
+article.goods .top .category-box ul {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+
+    /* outline: 2px solid salmon; */
+}
+
+.category-box ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.category-box ul li a {
+    color: #333;
+    line-height: 50px;
+    font-weight: bold;
+    /*  font-size: 18px;
+    font-size: 1.125rem; */
+}
+
+.category-box ul li a:hover {
+    text-decoration: underline;
+}
+
+article.goods .top .filter {
+    padding: 15px 0;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #ccc;
+
+    /* background-color: yellow; */
+}
+
+.top .filter p {
+    display: inline-block;
+    padding-right: 20px;
+    font-weight: 600;
+    color: #999;
+}
+
+.top .filter>select {
+    width: 100px;
+    height: 28px;
+    padding-left: 5px;
+    margin-right: 6px;
+    border-radius: 8px;
+    border: 1px solid #d9d9d9;
+}
+
+article.goods .container {
+    margin-bottom: 20px;
+}
+
+article.goods .container .products {
+    float: left;
+    width: 23.5%;
+    margin-bottom: 30px;
+
+    /* outline: 2px solid salmon; */
+}
+
+.container .products~.products {
+    margin-left: 2%;
+}
+
+.container .products:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+.container .products a {
+    margin-bottom: 6px;
+}
+
+.container .products a img {
+    display: block;
+    width: 100%;
+}
+
+.products .txt-box {}
+
+.products .txt-box .tag {
+    text-transform: uppercase;
+    font-weight: 600;
+    display: none;
+}
+
+.products .txt-box .tag .new {
+    color: red;
+}
+
+.products .txt-box .tag .sold-out {
+    color: #001E63;
+}
+
+.txt-box .name {}
+
+.txt-box .name a {
+    color: #333;
+    line-height: 18px;
+}
+
+.txt-box .name .price-tag {
+    font-weight: 600;
+    color: #001E63;
+}
+
+article.goods .pager {
+    margin-bottom: 60px;
+}
+
+article.goods .pager ul {
+    text-align: center;
+}
+
+article.goods .pager ul li {
+    display: inline-block;
+    margin-left: 20px;
+
+    position: relative; /* 가상요소 */
+
+}
+
+article.goods .pager ul li::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #FDB01F;
+    border-radius: 30px;
+
+    position: absolute;
+    left: -4px;
+    top: 5px;
+
+    display: none;
+}
+
+article.goods .pager ul li a {
+    color: #001E63;
+
+}
+

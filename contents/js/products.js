@@ -30,10 +30,11 @@ $(document).ready(function () {
         nowImg.attr('src', newSrc); // 'a.'로 변경
     });
 
-    //페이저 hover 했을 때
-    
-
     //페이저 클릭했을 때
-   
+    $('.pager li').click(function (e) {
+        e.preventDefault();
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+
 
 });

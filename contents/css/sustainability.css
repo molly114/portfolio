@@ -298,7 +298,8 @@ article.roadtrip .roadtrip-title p {
 
 /* -------------------------------.road------------------------------- */
 article.roadtrip {
-    position: relative; /* 가상요소 기준 */
+    position: relative;
+    /* 가상요소 기준 */
     margin: 0 auto;
 }
 
@@ -354,6 +355,7 @@ article.roadtrip .road::before {
 }
 
 article.roadtrip .road .achieve {
+    position: relative;
     /* outline: 2px solid salmon */
 }
 
@@ -399,4 +401,10 @@ article.roadtrip .road .active .dot {
     background-color: #ccc;
     display: block;
     margin-top: 50px;
+}
+
+.click {
+    position: absolute;
+    left: 50%;
+    top: 50%;
 }

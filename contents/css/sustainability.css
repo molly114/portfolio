@@ -115,6 +115,11 @@ article.recycle .circle-box .even {
     /* outline: 2px solid greenyellow; */
 }
 
+.circle .img-box:hover {
+    outline: 10px solid #FDB01F;
+    border: 100%;
+}
+
 .circle-tit {
     text-align: center;
 }
@@ -154,8 +159,8 @@ article.recycle .circle-box .even {
     max-width: 224px;
     height: 100%;
     max-height: 224px;
-    outline: 10px solid #FDB01F;
-    border-radius: 50%;
+    /* outline: 10px solid #FDB01F;
+    border-radius: 50%; */
 
     position: absolute;
     left: 4.2%;
